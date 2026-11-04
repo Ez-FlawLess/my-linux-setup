@@ -1,0 +1,30 @@
+layout {
+    tab_template name="normal-tab" {
+        pane size=1 borderless=true {
+            plugin location="zellij:tab-bar"
+        }
+        children
+        pane size=1 borderless=true {
+            plugin location="zellij:status-bar"
+        }
+    }
+
+    tab_template name="focus-tab" {
+        pane size=1 borderless=true {
+            plugin location="zellij:tab-bar"
+        }
+        children
+    }
+
+    focus-tab name="code" focus=true {
+        pane command="hx" args="."
+    }
+
+    normal-tab name="shell" {
+        pane
+    }
+
+    focus-tab name="ai" {
+        pane command="opencode" args="."
+    }
+}
