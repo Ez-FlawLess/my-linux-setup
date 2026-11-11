@@ -57,6 +57,14 @@ echo 'alias zc="zellij --layout code"' >> ~/.bashrc
 source ~/.bashrc
 ```
 
+### Rust Analyzer
+
+Install Rust Analyzer for Rust LSP
+
+```bash
+rustup component add rust-analyzer
+```
+
 ## Opencode
 
 install [Bun](https://bun.com/docs/installation)
